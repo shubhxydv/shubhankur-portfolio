@@ -38,7 +38,7 @@ const projects: ProjectDetails[] = [
         title: "Tech Nova Hackathon",
         description: `Participated in TechNova: Igniting Brilliance (Season 1) hackathon, 
                       organized by Enterprise System Solution Private Limited. 
-                      Selected for Round 2 Grand Masters (ongoing).`,
+                      `,
     },
     {
         href: "",

@@ -1,8 +1,8 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faPython } from '@fortawesome/free-brands-svg-icons'; 
-import { faCar } from '@fortawesome/free-solid-svg-icons';
+import { faReact, faRocketchat } from '@fortawesome/free-brands-svg-icons'; 
+import { faChartLine } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
@@ -18,17 +18,19 @@ const labelsFirst = [
 ];
 
 const labelsSecond = [
-   "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Github"
+   "Python",
+"NumPy",
+"Pandas",
+"Matplotlib",
+"Scikit-learn",
+"Python Flask",
+"HTML",
+"CSS",
+"Javascript"
 ];
 
 const labelsThird = [
-  "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Github"
+  "React JS", "Firebase", "Firestore", "Firebase Authentication", "Firebase Storage", "React Toastify", "CSS", "JavaScript", "HTML",
 ];
 
 function Expertise() {
@@ -40,9 +42,10 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3><a href="your-portfolio-link-here" target="_blank"> Responsive Portfolio Webpage</a></h3>
-                    <p>I created a portfolio web page using HTML, CSS, JavaScript, React, and JSON, showcasing
-                         my skills and projects. This demonstrates my expertise in building dynamic and 
-                         responsive user interfaces with modern web technologies.</p>
+                    <p>I created a portfolio web page using HTML, CSS, JavaScript, React, and JSON to showcase my skills, projects, 
+                        and achievements in web development. This platform highlights my expertise in building dynamic, responsive,
+                         and user-friendly interfaces. By leveraging modern web technologies, I demonstrated my ability to create visually
+                          appealing and interactive applications while ensuring functionality across different devices.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Technologies Used:</span>
                         {labelsFirst.map((label, index) => (
@@ -52,12 +55,13 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faCar} size="3x"/>
-                    <h3><a href="https://github.com/shubhxydv/codsoft_landing_page" target="_blank" rel="noopener noreferrer">Hyundai Verna Landing Page</a></h3>
+                <FontAwesomeIcon icon={faChartLine} size="3x"/>
+                    <h3><a href="https://github.com/shubhxydv/Banglore_Price_Prediction_ML_Project.git" target="_blank" rel="noopener noreferrer">Price Prediction Model (ML) </a></h3>
 
-                    <p>Developed a landing page for the Hyundai Verna using HTML, CSS, and JavaScript, featuring 
-                        an engaging design and interactive elements. The project showcases my ability to create 
-                        visually appealing and user-friendly web experiences.</p>
+                    <p>I developed a machine learning model to predict property prices in Bengaluru's real estate market.  
+                        Using Python, Flask, and Scikit-learn, it analyzes factors like location, size, and amenities  
+                        to deliver accurate predictions. The project includes a web interface built with HTML, CSS, and JavaScript,  
+                        demonstrating my ability to integrate machine learning with user-friendly applications.  </p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -67,11 +71,13 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3><a href="https://github.com/shubhxydv/codsoft_calculator" target="_blank" rel="noopener noreferrer">Calculator</a></h3>
-                    <p>"Developed a highly efficient calculator using CSS, HTML, and JavaScript, delivering precise
-                         real-time calculations. Expertise in creating user-friendly interfaces for accurate and
-                          advanced mathematical operations."</p>
+                <FontAwesomeIcon icon={faRocketchat} size="3x"/>
+                    <h3><a href="https://github.com/shubhxydv/ACM-SRM-Society-Chatting-Platform.git" target="_blank" rel="noopener noreferrer">Chating Platform (Full Stack)</a></h3>
+                    <p>"Web Chatting platform for the ACM SRM Society.
+                         Features include individual and group chats, customizable permissions and roles, and the ability to send images 
+                         and videos. Users can create and edit their profiles, including profile pictures, names, descriptions, domains,
+                          and titles. The platform also offers a dedicated space to display leads, heads of domains, and upcoming events,
+                           fostering better engagement and interaction within the community."</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
